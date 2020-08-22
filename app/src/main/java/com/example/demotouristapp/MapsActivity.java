@@ -75,6 +75,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mapFragment.getMapAsync(this);
         loadData();
         initcomponents();
+        //a
     }
 
     private void initcomponents() {
