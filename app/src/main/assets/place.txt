@@ -1,0 +1,255 @@
+{
+    "Hue": {
+    "Place": [
+    {
+    "name": "Đại Nội Huế",
+    "location": [
+    16.4685,
+    107.5786
+    ],
+    "imageUrl": "dai_noi_hue",
+    "description": "Nằm ngay bên bờ sông Hương thơ mộng, Đại Nội Huế là một quần thế di tích văn hoá được công nhận là di tích văn hoá thế giới. Quần thế Đại Nội Huế bao gồm Hoàng Thành và Tử Cấm Thành, được bao bọc bởi khu vực Kinh thành.\nĐặc biệt hơn nữa, mới đây Đại Nội Huế đã chính thức mở cửa đón khách thăm quan vào ban đêm từ 19 – 22h và đây chính là dịp để bạn “sở hữu” những bức ảnh tuyệt đẹp bên những công trình rực rỡ, lung linh ánh đèn. "
+    },
+    {
+    "name": "Chùa Thiên Mụ",
+    "location": [
+    16.4531, 107.5448
+    ],
+    "imageUrl": "chua_thien_mu",
+    "description": "Toạ lạc trên ngọn đồi Hà Khê, tả ngạn sông Hương, chùa Thiên Mụ hiện lên giữa một không gian thiên nhiên thơ mộng đầy trữ tình và là khơi nguồn cảm hứng cho biết bao tác phẩm thi ca nhạc hoạ. Từ xa sừng sững tháp Phước Duyên cao ngất, như một biểu tượng mà bất kì ai cũng nhớ tới khi đặt chân đến với thành phố cố đô này. Đến Chùa Thiên Mụ, lắng nghe tiếng chùa âm vang bên tai hoà vang trong cảnh sắc thiên nhiên nên thơ, bạn sẽ thấy lòng mình nhẹ nhàng và thư thả hơn trước bộn bề cuộc sống."
+    },
+    {
+    "name": "Sông Hương",
+    "location": [
+    16.4783, 107.5910
+    ],
+    "imageUrl": "song_huong",
+    "description": " Sông Hương Là biểu tượng và cũng là niềm tự hào của người dân xứ Huế, sông Hương hiền hoà như một dải lụa dài mềm mại dài miên man giữa mảnh đất Kinh kỳ mộng mơ. Sông Hương xanh màu ngọc bích, trong vắt như soi bóng cả quang cảnh thành phố nên thơ dưới mặt nước êm ả và lấp lánh dưới ánh nắng mặt trời. Biết bao nghệ sĩ khi đi du thuyền ngắm cảnh Hương Giang êm đềm và lắng tai nghe những điệu dân ca xứ Huế truyền thống nơi đây đã tìm thấy nguồn cảm hứng dạt dào để sáng tác nên những áng thơ văn bất hủ."
+    },
+    {
+    "name": "Đồi Vọng Cảnh",
+    "location": [
+    16.4291, 107.5639
+    ],
+    "imageUrl": "doi_vong_canh",
+    "description": "Nếu đang tìm kiếm một nơi để chiêm ngưỡng toàn cảnh thành phố từ trên cao, bạn hãy đến Đồi Vọng Cảnh. Từ điểm nhìn trên của Lầu Vọng Cảnh, bạn sẽ được ngắm nhìn phong cảnh “sông nước hữu tình” của dòng sông Hương thơ mộng và những lăng tẩm, đền chùa cổ kính, hướng tầm mắt ra xa là trập trùng núi non hùng vĩ. Nếu có dịp, hãy ghé Đồi Vọng Cảnh khi bình minh lên hoặc khi hoàng hôn buông xuống, bạn sẽ thấy cả một góc trời xứ Huế như bừng lên trong ánh nắng mặt trời lung linh rực rỡ."
+    },
+    {
+    "name": "Núi Ngự Bình",
+    "location": [
+    16.4420, 107.5956
+    ],
+    "imageUrl": "nui_ngu_binh",
+    "description": "Ngoài dòng sông Hương thơ mộng, núi Ngự Bình cũng là một biểu tượng thiên nhiên và là niềm tự hào của người dân xứ Huế. Cứ nhắc đến sông Hương thì người ta không thể quên nhắc tới núi Ngự. Đứng trên đỉnh của ngọn núi xinh đẹp này, bạn có thẻ phóng tầm mắt ra xa và chiêm ngưỡng những địa danh và khung cảnh thiên nhiên đẹp như tranh vẽ của thành phố Huế. Từ chân tới đỉnh núi được bao phủ bởi rừng cây thông xanh tươi, hoà trong làn gió mát rượi, mang lại không gian mát lành và cảm giác thư thái đến tột cùng."
+    },
+    {
+    "name": "Cầu Tràng Tiền",
+    "location": [
+    16.4686, 107.5892
+    ],
+    "imageUrl": "cau_trang_tien",
+    "description": "Cầu Tràng Tiền (hay còn được gọi là Cầu Trường Tiền) bắc qua Sông Hương với những nhịp cầu cong cong mềm mại, uyển chuyển và là một trong những biểu tượng đặc trưng của cố đô Huế. Cầu Tràng Tiền còn gắn liền với lịch sử hơn 100 năm và chứng kiến biết bao thăng trầm của lịch sử dân tộc, địa điểm du lịch Huếtham quan chứng nhân lịch sử. Ngày nay, cầu được lắp đặt một hệ thống ánh sáng hiện đại, mỗi khi chiều buông lại toả sáng lung linh rực rỡ nhiều màu sắc."
+    },
+    {
+    "name": "Điện Hòn Chén",
+    "location": [
+    16.4219, 107.5630
+    ],
+    "imageUrl": "dien_hon_chen",
+    "description": "Nằm trên sườn núi Ngọc Trẩn, thấp thoáng ẩn mình trong những tán cây xanh và hướng mình in bóng xuống làn nước sông Hương, Điện Hòn Chén Ẩn là một cụm di tích lịch sử và tôn giáo bao gồm 10 công trình với những nét kiến trúc trang trí cổ độc đáo. Cụm di tích này còn là một điểm du lịch văn hoá tín ngưỡng đặc sắc thu hút nhiều du khách đến vào dịp lễ hội diễn ra vào tháng 3 và tháng 7 Âm lịch hàng năm."
+    },
+    {
+    "name": "Núi Bạch Mã",
+    "location": [
+    16.1667, 107.8333
+    ],
+    "imageUrl": "nui_bach_ma",
+    "description": "Di chuyển ra khỏi trung tâm thành phố Huế, Núi Bạch Mã là ranh giới tự nhiên giữa tỉnh Thừa Thiên Huế và Đà Nẵng thuộc vườn quốc gia Bạch Mã với những ngọn thác hùng vĩ và sự đa dạng các loài động thực vật quý hiếm. Chinh phục núi Bạch Mã, bạn sẽ được chiêm ngưỡng toàn cảnh núi Tuý Vân, đèo Hải Vân và phong cảnh thành phố Huế lộng lẫy như thu vào trong tầm mắt."
+    },
+    {
+    "name": "Biển Lăng Cô",
+    "location": [
+    16.2688, 108.0642
+    ],
+    "imageUrl": "bien_lang_co",
+    "description": "Không chỉ có những di tích lịch sử và văn hoá cổ kính, thành phố Huế còn sở hữu những bãi biển đẹp làm mê say nhiều khách du lịch. Biển Lăng Cô là một bãi biển có phong cảnh thuộc vào loại đẹp nhất Việt Nam với bãi cát trắng dài miên man ôm lấy bờ biển xanh trong vắt là một trong những địa điểm du lịch Huế lựa chọn hàng đầu. Xung quanh bờ biển là những cánh rừng hùng vĩ xanh mát trên nền núi non hùng vĩ, chắc chắn sẽ làm trải nghiệm du lịch Huế của bạn thêm trọn vẹn."
+    },
+    {
+    "name": "Chợ Đông Ba",
+    "location": [
+    16.4726, 107.5885
+    ],
+    "imageUrl": "cho_dong_ba",
+    "description": "Chợ Đông Ba là địa điểm mua sắm lớn nhất là lâu đời nhất tại thành phố Huế. Chợ Đông Ba gắn với lịch sử hàng trăm năm của những thời vua nhà Nguyễn. Ngày nay, chợ không chỉ là nơi mua sắm cho người dân nội đô mà còn là nơi được nhiều du khách ghé thăm để sắm quà lưu niệm cho người thân và bạn bè cho chuyến du lịch Huế đầy thú vị."
+    }
+    ]
+    },
+    "HaNoi": {
+    "Place": [
+    {
+    "name": "Lăng Bác",
+    "location": [
+    21.0368, 105.8346
+    ],
+    "imageUrl": "lang_bac",
+    "description": "Lăng Bác là nơi lưu giữ thi hài của vị lãnh tụ kính yêu. Bên ngoài lăng là những hàng tre xanh bát ngát. Lăng chủ tích mở cửa vào sáng thứ 3,4,5,7 và chủ nhật. Khi vào viếng lăng Bác, bạn chú ý ăn mặc chỉnh tề, không đem theo các thiết bị điện tử ghi hành và giữ trật tự trong lăng."
+    },
+    {
+    "name": "Hồ Gươm",
+    "location": [
+    21.0292, 105.8523
+    ],
+    "imageUrl": "ho_guom",
+    "description": "Hồ Gươm hay hồ Hoàn Kiếm là một trong những nơi nên đến ở Hà Nội khi du lịch thủ đô. Nằm ở giữa trung tâm, Hồ Gươm được ví như trái tim của thành phố ngàn năm tuổi này.. Mặt hồ như tấm gương lớn soi bóng những cây cổ thụ, những rặng liễu thướt tha tóc rủ, những mái đền, chùa cổ kính, tháp cũ rêu phong, các toà nhà mới cao tầng vươn lên trời xanh."
+    },
+    {
+    "name": "Phố cổ Hà Nội",
+    "location": [
+    21.0316, 105.8531
+    ],
+    "imageUrl": "pho_co_ha_noi",
+    "description": "Muốn tìm hiểu về cuộc sống, văn hóa và con người Tràng An thì bạn đừng bỏ qua phố cổ – một trong những địa điểm du lịch ở Hà Nội đầy thú vị và hấp dẫn với du khách. Phố cổ Hà Nội nằm ở phía Tây và phía Bắc của Hồ Hoàn Kiếm, là nơi tập trung đông dân cư sinh sống có 36 phố phường. Mỗi con phố ở đây chủ yếu tập trung bán một loại mặt hàng nhất định."
+    },
+    {
+    "name": "Văn Miếu Quốc Tử Giám",
+    "location": [
+    21.0294, 105.8362
+    ],
+    "imageUrl": "van_mieu_quoc_tu_giam",
+    "description": "Nếu kể tên các địa điểm du lịch Hà Nội bậc nhất xưa và nay có lẽ ai cũng sẽ nghĩ ngay đến Văn Miếu Quốc Tử Giám. Đây là một quần thể kiến trúc văn hoá hàng đầu và là niềm tự hào của người dân Thủ đô khi nhắc đến truyền thống ngàn năm văn hiến của Thăng Long – Đông Đô – Hà Nội."
+    },
+    {
+    "name": "Nhà thờ lớn Hà Nội",
+    "location": [
+    21.0287, 105.8488
+    ],
+    "imageUrl": "nha_tho_lon_ha_noi",
+    "description": "Nằm ở 40 phố Nhà Chung, phường Hàng Trống, Nhà thờ lớn là một trong những điểm đến thú vị ở Hà Nội, nơi lui tới không chỉ của các tín đồ theo đạo mà còn là địa điểm quen thuộc của giới trẻ, khách du lịch tứ phương. Nhà thờ được thiết kế theo phong cách kiến trúc Gothic trung cổ châu Âu với bức tường xây cao, có mái vòm và nhiều cửa sổ."
+    },
+    {
+    "name": "Chùa Trấn Quốc",
+    "location": [
+    21.0480, 105.8369
+    ],
+    "imageUrl": "chua_tran_quoc",
+    "description": "Chùa Trấn Quốc là một trong những ngôi chùa cổ nhất ở Hà Nội và Việt Nam, nằm trên một bán đảo phía Nam của Hồ Tây, ở gần cuối đường Thanh Niên, quận Ba Đình, Hà Nội. Từng là trung tâm Phật giáo của kinh thành Thăng Long vào thời Lý và thời Trần với những giá trị về lịch sử và kiến trúc, chùa Trấn Quốc nổi tiếng là chốn cửa Phật linh thiêng, là điểm thu hút rất nhiều tín đồ Phật tử, khách tham quan, du lịch trong và ngoài nước."
+    },
+    {
+    "name": "Hồ Tây",
+    "location": [
+    21.0532, 105.8261
+    ],
+    "imageUrl": "ho_tay",
+    "description": "Hồ Tây một trong những danh thắng nổi tiếng của thủ đô Hà Nội, đây được coi là một “sân khấu khổng lồ soi bóng mây trời và cảnh quan thành phố”. Khung cảnh ven hồ Tây vô cùng thi vị, mơ mộng. Bao quanh hồ là những hàng cây xanh cao thẳng tắp, rồi những bồn hoa , thềm cỏ xanh mướt mọc xung quanh đã tạo ra một khung cảnh đặc biệt cho hồ Tây."
+    },
+    {
+    "name": "Nhà hát lớn Hà Nội",
+    "location": [
+    21.0241, 105.8579
+    ],
+    "imageUrl": "nha_hat_lon_ha_noi",
+    "description": "Nằm ở số 1 Tràng Tiền, Nhà hát lớn là một trong các địa điểm du lịch đẹp ở Hà Nội mang nhiều dấu ấn lịch sử. Đây là địa điểm tổ chức những chương trình nghệ thuật lớn của nhiều ca sĩ, nghệ sĩ tên tuổi hàng đầu Việt Nam. Du khách có thể chiêm ngưỡng kiến trúc tuyệt vời của Nhà hát Lớn hay mua vé vào xem một trong những chương trình biểu diễn thường xuyên được tổ chức để có thể tận mắt thấy được hết nội thất tráng lệ của nhà hát."
+    },
+    {
+    "name": "Hoàng thành Thăng Long",
+    "location": [
+    21.0344, 102.8401
+    ],
+    "imageUrl": "hoang_thanh_thang_long",
+    "description": "Hoàng thành Thăng Long là quần thể di tích gắn liền với sự phát triển của Thăng Long – Hà Nội, được các triều vua xây dựng trong nhiều giai đoạn lịch sử. Đây cũng là di tích quan trọng bậc nhất trong hệ thống các di tích lịch sử của Việt Nam. Đến Hoàng thành Thăng Long du khách có thể tham quan những địa điểm nổi bật như khu khảo cổ học số 18 Hoàng Diệu, Đoan Môn, Điện Kính Thiên, Bắc Môn (thành Cửa Bắc)"
+    },
+    {
+    "name": "Cột cờ Hà Nội",
+    "location": [
+    21.0326, 105.8398
+    ],
+    "imageUrl": "cot_co_ha_noi",
+    "description": "Kỳ đài Hà Nội hay còn được nhiều biết tới hơn với tên gọi Cột cờ Hà Nội nằm trong khuôn viên của bảo tàng lịch sử quân sự Việt Nam. Được đánh giá là công trình nguyên vẹn và hoành tráng nhất trong quần thể di tích Hoàng thành Thăng Long, Cột Cờ chính là điểm tham quan du lịch ở Hà Nội mà du khách không thể bỏ qua trong hành trình khám phá lịch sử của đất Hà Thành."
+    }
+    ]
+    },
+    "SaiGon": {
+    "Place": [
+    {
+    "name": "Nhà thờ Tân Định",
+    "location": [
+    10.7892, 106.6904
+    ],
+    "imageUrl": "nha_tho_tan_dinh",
+    "description": "Ngay khi bắt gặp nhà thờ Tân Định, bạn sẽ bị “hút hồn” bởi nền tường màu hồng nổi bật nhất con đường. Đây là một trong những nhà thờ có kiến trúc đẹp nhất thành phố, là sự kết hợp giữa phong cách kiến trúc Gothic và Roman, pha chút Baroque ở những nét trang trí."
+    },
+    {
+    "name": "Chùa Ngọc Hoàng",
+    "location": [
+    10.7917, 106.6979
+    ],
+    "imageUrl": "chua_ngoc_hoang",
+    "description": "Kiến trúc của ngôi chùa Ngọc Hoàng theo kiểu Trung Hoa được trang trí rực rỡ. Ngay khi nhìn thấy cổng chùa, bạn sẽ ngạc nhiên bởi cổng tam quan nổi bật với những đường nét uốn lượn hình sóng nước của hai con rồng theo tư thế “tranh châu”."
+    },
+    {
+    "name": "Bảo tàng thành phố Hồ Chí Minh",
+    "location": [
+    10.7760, 106.6996
+    ],
+    "imageUrl": "bao_tang_thanh_pho_ho_chi_minh",
+    "description": "Nếu yêu thích một nét cổ điển hoài niệm thì bảo tàng TP Hồ Chí Minh là địa điểm rất phù hợp dành cho bạn. Nơi đây được xây dựng hoàn thành năm 1980, mang phong cách kiến trúc cổ điển – phục hưng của Pháp tựa như một dinh thự cổ kính. Mỗi góc của bảo tàng đều có thể đem đến cho bạn những bức ảnh sống ảo vô cùng thú vị."
+    },
+    {
+    "name": "Chợ An Đông",
+    "location": [
+    10.7580, 106.6722
+    ],
+    "imageUrl": "cho_an_dong",
+    "description": "Nếu bạn đã quá quen với khu chợ Bến Thành, vậy hãy thử thay đổi 1 lần trải nghiệm đến với chợ An Đông. Nằm trong khu trung tâm thương mại An Đông, đây được xem là khu chợ sỉ quần áo chất lượng lớn nhất Sài Gòn với đa dạng các loại mẫu mã và giá cả cực kì hợp lý."
+    },
+    {
+    "name": "Thảo Cầm Viên",
+    "location": [
+    10.7879, 106.7050
+    ],
+    "imageUrl": "thao_cam_vien",
+    "description": "Một địa chỉ hấp dẫn không chỉ các bé nhỏ mà người lớn cũng rất thích chính là Thảo Cầm viên. Nơi đây nằm trong top 8 những vườn thú lâu nhất thế giới, mang tính lịch sử và là biểu tượng cho thành phố Hồ Chí Minh. Thảo cầm viên hiện đang nuôi dưỡng và chăm sóc rất nhều loại động vật hoang dã như sư tử, voi, hổ, công, hươu cao cổ, trăn vv…"
+    },
+    {
+    "name": "Tòa nhà Bitexco",
+    "location": [
+    10.7716, 106.7043
+    ],
+    "imageUrl": "toa_nha_bitexco",
+    "description": "Lý do vì sao tòa nhà này lại nổi tiếng đến vậy? Vì đây là tòa nhà cao nhất Sài Gòn và từ tòa nhà này, các bạn có thể được ngắm toàn cảnh Sài Gòn rộng lớn từ trên cao vào cả ban ngày hay ban tối."
+    },
+    {
+    "name": "Snow Town Sài Gòn",
+    "location": [
+    10.7552, 106.6553
+    ],
+    "imageUrl": "snow_town_sai_gon",
+    "description": "Trải nghiệm tuyết giữa lòng Sài Gòn? Hãy đến với Snow Town Sài Gòn. Tại đây, bạn được trải mình trong cái giá lạnh của tuyết, được trượt tuyết và trải nghiệm nhiều các dịch vụ khác của khu vui chơi này."
+    },
+    {
+    "name": "Vinhomes Central Park",
+    "location": [
+    10.7937, 106.7240
+    ],
+    "imageUrl": "vinhomes_central_park",
+    "description": "Công viên này là một điểm đến cực kỳ thu hút sự quan tâm của người dân đất Sài Thành bởi vị trí nằm ven sông Sài Gòn tuyệt đẹp. Đón những cơn gió mát lạnh từ sông, khuôn viên được xây dựng nền cỏ xanh bạt ngàn, những cung đường lãng mạn và hồ nước nhân tạo với đài phun nước khổng lồ và hệ thống ánh sáng tinh tế và chất lượng."
+    },
+    {
+    "name": "Công viên cá Koi Nhật",
+    "location": [
+    10.8592, 106.5850
+    ],
+    "imageUrl": "cong_vien_ca_koi_nhat",
+    "description": "Khi đặt chân đến đây, bạn sẽ thấy những chú cá chép bằng đá to lớn với màu sắc sặc sỡ. Bạn sẽ gửi xe theo sự hướng dẫn của bảo vệ và sau đó đi vào tham quan công viên."
+    },
+    {
+    "name": "Chợ Bến Thành",
+    "location": [
+    10.7721, 106.6983
+    ],
+    "imageUrl": "cho_ben_thanh",
+    "description": "Chợ Bến Thành nằm ở Cửa Nam – nơi giao cắt giữa các con đường Phan Bội Châu, Phan Chu Trinh, Lê Thánh Tôn và công trường Quách Thị Trang, phường Bến Nghé, quận 1 và là ngôi chợ lâu đời nhất tại đây. Biểu tượng nổi bật nhất của chợ chính là hình ảnh đồng hồ ở ngay cửa nam của ngôi chợ tựa như đồng hồ Big Ben ở London."
+    }
+    ]
+    }
+    }
