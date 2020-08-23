@@ -51,8 +51,8 @@ android:orientation="vertical">
            android:textColor="#FFFFFF"
            android:layout_margin="10dp"
            android:textStyle="bold"
-           android:text="Remove"
-           android:onClick="btn_remove_onclick"/>
+           android:text="Add"
+           android:onClick="btn_add_onclick"/>
    </LinearLayout>
 
 </LinearLayout>

@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.graphics.Color;  
+import android.graphics.Color;
 import android.location.Location;
 import android.net.ConnectivityManager;
 import android.os.AsyncTask;
@@ -37,21 +37,25 @@ import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
+import java.lang.reflect.Type;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class RouteActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    private Landmark mLandmark;
+  //  private Landmark mLandmark;
+    private ArrayList<Landmark> ListLandmark;
     private Marker mMarker;
     private TextToSpeech mText2Speech;
     private boolean mIsText2SpeechReady = true;
@@ -74,24 +78,25 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         loadData();
-        initcomponent();
-        //a
+        initcomponents();
     }
 
-    private void initcomponent() {
-            mText2Speech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
-                @Override
-                public void onInit(int status) {
-                    mIsText2SpeechReady = true;
-                }
-            });
+    private void initcomponents() {
+        mText2Speech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
+            @Override
+            public void onInit(int status) {
+                mIsText2SpeechReady = true;
+            }
+        });
     }
 
     private void loadData() {
         Intent intent = getIntent();
-        mLandmark = new Landmark(intent.getStringExtra("name"), intent.getStringExtra("description"),
-                intent.getIntExtra("logoid", 0),
-                new LatLng(intent.getDoubleExtra("lat", 0), intent.getDoubleExtra("lng", 0)));
+        String routelist = intent.getStringExtra("routes");
+        Gson gson = new Gson();
+        Type type = new TypeToken<ArrayList<Landmark>>(){}.getType();
+        ListLandmark = gson.fromJson(routelist,type);
+        Log.d("testlist",String.valueOf(ListLandmark.size()));
     }
 
     @Override
@@ -114,10 +119,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             public boolean onMarkerClick(Marker marker) {
                 if (mIsText2SpeechReady)
                 {
-                    mText2Speech.speak(mLandmark.getDescription(),
+                    int pos = Integer.valueOf(marker.getId());
+                    Log.d("testid", String.valueOf(pos));
+                    mText2Speech.speak(ListLandmark.get(pos).getDescription(),
                             TextToSpeech.QUEUE_FLUSH, null, null);
                     Toast.makeText(getApplicationContext(),
-                            mLandmark.getDescription(),
+                            ListLandmark.get(pos).getDescription(),
                             Toast.LENGTH_SHORT
                     ).show();
                 }
@@ -128,14 +135,15 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
     private void displayMarker() {
-        Bitmap bmp = BitmapFactory.decodeResource(getResources(), mLandmark.getLogoID());
-        bmp = Bitmap.createScaledBitmap(bmp, bmp.getWidth()/4, bmp.getHeight()/4, false);
-        BitmapDescriptor bitmapDescriptor = BitmapDescriptorFactory.fromBitmap(bmp);
-        mMarker = mMap.addMarker(new MarkerOptions().position(mLandmark.getLatlng()).title(mLandmark.getName()).snippet(mLandmark.getDescription()).icon(bitmapDescriptor));
-        mMap.animateCamera(CameraUpdateFactory.zoomTo(15),2000,null);
-        CameraPosition cameraPosition = new CameraPosition.Builder().target(mLandmark.getLatlng()).zoom(15).bearing(90).tilt(30).build();
-        mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
-
+        for(Landmark mLandmark : ListLandmark ) {
+            Bitmap bmp = BitmapFactory.decodeResource(getResources(), mLandmark.getLogoID());
+            bmp = Bitmap.createScaledBitmap(bmp, bmp.getWidth() / 4, bmp.getHeight() / 4, false);
+            BitmapDescriptor bitmapDescriptor = BitmapDescriptorFactory.fromBitmap(bmp);
+            mMarker = mMap.addMarker(new MarkerOptions().position(mLandmark.getLatlng()).title(mLandmark.getName()).snippet(mLandmark.getDescription()).icon(bitmapDescriptor));
+            mMap.animateCamera(CameraUpdateFactory.zoomTo(15), 2000, null);
+            CameraPosition cameraPosition = new CameraPosition.Builder().target(mLandmark.getLatlng()).zoom(15).bearing(90).tilt(30).build();
+            mMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+        }
     }
     public  boolean isNetworkConnected(){
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
@@ -151,52 +159,34 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mpolyline = polyline;
     }
     public void btn_direct_onclick(View view) {
-            if(mpolyline!=null)
-                mpolyline.remove();
-            client = LocationServices.getFusedLocationProviderClient(this);
-            if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) ==
-                    PackageManager.PERMISSION_GRANTED &&
-                    ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) ==
-                            PackageManager.PERMISSION_GRANTED) {
-            }  else {
-                ActivityCompat.requestPermissions(this, new String[] {
-                                Manifest.permission.ACCESS_FINE_LOCATION,
-                                Manifest.permission.ACCESS_COARSE_LOCATION },
-                        0);
+        if(mpolyline!=null)
+            mpolyline.remove();
+        client = LocationServices.getFusedLocationProviderClient(this);
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) ==
+                PackageManager.PERMISSION_GRANTED &&
+                ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) ==
+                        PackageManager.PERMISSION_GRANTED) {
+        }  else {
+            ActivityCompat.requestPermissions(this, new String[] {
+                            Manifest.permission.ACCESS_FINE_LOCATION,
+                            Manifest.permission.ACCESS_COARSE_LOCATION },
+                    0);
+        }
+        Task<Location> task =client.getLastLocation();
+        client.getLastLocation().addOnCompleteListener(new OnCompleteListener<Location>() {
+            @Override
+            public void onComplete(@NonNull Task<Location> task) {
+                location= task.getResult();
+                mURL="https://api.mapbox.com/directions/v5/mapbox/cycling/";
+                mURL+=String.valueOf(location.getLongitude())+"%2C"+String.valueOf(location.getLatitude())+"%3B"+String.valueOf(ListLandmark.get(0).getLatlng().longitude)+"%2C"+
+                        String.valueOf(ListLandmark.get(0).getLatlng().latitude)+mURL1;
+                Log.d("getLocation",mURL);
+                MyDirection myDirection = new MyDirection();
+                myDirection.execute();
             }
-            Task<Location> task =client.getLastLocation();
-            client.getLastLocation().addOnCompleteListener(new OnCompleteListener<Location>() {
-                @Override
-                public void onComplete(@NonNull Task<Location> task) {
-                    location= task.getResult();
-                    mURL="https://api.mapbox.com/directions/v5/mapbox/cycling/";
-                    mURL+=String.valueOf(location.getLongitude())+"%2C"+String.valueOf(location.getLatitude())+"%3B"+String.valueOf(mLandmark.getLatlng().longitude)+"%2C"+
-                            String.valueOf(mLandmark.getLatlng().latitude)+mURL1;
-                    Log.d("getLocation",mURL);
-                    MyDirection myDirection = new MyDirection();
-                    myDirection.execute();
-                }
-            });
+        });
     }
 
-
-    public void btn_add_onclick(View view) {
-          /*if (mpolyline!=null)
-              mpolyline.remove();*/
-        Context context = getApplicationContext();
-        CharSequence text = "This place has been added to the route!";
-        int duration = Toast.LENGTH_SHORT;
-        Toast toast = Toast.makeText(context, text, duration);
-        toast.show();
-        Intent intent = new Intent(MapsActivity.this, MainActivity.class);
-        intent.putExtra("name",mLandmark.getName());
-        intent.putExtra("description",mLandmark.getDescription());
-        intent.putExtra("logoid",mLandmark.getLogoID());
-        intent.putExtra("lat",mLandmark.getLatlng().latitude);
-        intent.putExtra("lng",mLandmark.getLatlng().longitude);
-        startActivity(intent);
-
-    }
 
     private class MyDirection extends AsyncTask<Void, Void, ArrayList>{
         @Override
@@ -241,7 +231,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                     JSONArray jsonArray_intersections = jsonArray_steps.getJSONObject(i).getJSONArray("intersections");
                     JSONArray jsonArray_location = jsonArray_intersections.getJSONObject(0).getJSONArray("location");
                     String lng = jsonArray_location.getString(0);
-                     String lat = jsonArray_location.getString(1);
+                    String lat = jsonArray_location.getString(1);
                     Location.add(new LatLng(Double.valueOf(lat), Double.valueOf(lng)));
                 }
 

@@ -22,7 +22,8 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
     private GridView _gridview;
     private ArrayList<Landmark> _landmarks;
-
+    private ArrayList<Landmark> _routes = new ArrayList<>();
+    private String _cityname="Hue";
     private GridViewArrayAdapter  _adapter;
     private GridView.OnItemClickListener _itemOnclick = new GridView.OnItemClickListener() {
 
@@ -42,19 +43,27 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        loadData();
+        loadData(_cityname);
         initComponents();
     }
-    private void loadData(){
+
+    private void loadDatafromMaps() {
+        Intent intent = getIntent();
+        Landmark lndmk;
+        lndmk = new Landmark(intent.getStringExtra("name"), intent.getStringExtra("description"),
+                intent.getIntExtra("logoid", 0),
+                new LatLng(intent.getDoubleExtra("lat", 0), intent.getDoubleExtra("lng", 0)));
+        Log.d("testgetlndmk","landmark "+ lndmk.getName());
+        Log.d("testgetlndmk","landmark "+ lndmk.getDescription());
+        Log.d("testgetlndmk","landmark "+ String.valueOf(lndmk.getLogoID()));
+        Log.d("testgetlndmk","landmark "+ String.valueOf(lndmk.getLatlng().latitude));
+        Log.d("testgetlndmk","landmark "+ String.valueOf(lndmk.getLatlng().longitude));
+        _routes.add(lndmk);
+    }
+
+
+    private void loadData(String _cityname){
         _landmarks = new ArrayList<>();
-      /*  Landmark lndmk1 = new Landmark("Bến Nhà Rồng","Nơi Bác Hồ ra đi tìm đường cứu nước năm 1911",R.drawable.logo_ben_nha_rong, new LatLng(10.768313, 106.706793));
-        Landmark lndmk2 = new Landmark("Chợ Bến Thành", "Địa danh nổi tiếng qua các thời kì của Sài Gòn",R.drawable.logo_cho_ben_thanh, new LatLng(10.772535,106.698034));
-        Landmark lndmk3 = new Landmark("Nhà thờ Đức Bà","Công trình kiến trúc độc đáo, nét đặc trưng của Sài Gòn",R.drawable.logo_nha_tho_duc_ba, new LatLng(10.779742,106.699188));
-        Landmark lndmk4 = new Landmark("Hồ Con Rùa","Hồ Con Rùa nhưng không có rùa",R.drawable.logo_ho_con_rua, new LatLng(10.7826608,106.695915));
-        _landmarks.add(lndmk1);
-        _landmarks.add(lndmk2);
-        _landmarks.add(lndmk3);
-        _landmarks.add(lndmk4);*/
         String inline="";
         try {
             InputStream is = getAssets().open("place.txt");
@@ -69,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         try {
 //            Log.d("test_hue",inline);
             JSONObject _inline = new JSONObject(inline);
-            JSONObject _hue = _inline.getJSONObject("Hue");
+            JSONObject _hue = _inline.getJSONObject(_cityname);
             JSONArray _place = _hue.getJSONArray("Place");
             for(int i=0;i<_place.length();i++) {
                 String _name = _place.getJSONObject(i).getString("name");
@@ -83,7 +92,6 @@ public class MainActivity extends AppCompatActivity {
                 _landmarks.add(lndmk0);
             }
         } catch (JSONException e) {
-            Log.d("test_hue", "ex");
             e.printStackTrace();
         }
 
@@ -93,5 +101,12 @@ public class MainActivity extends AppCompatActivity {
         _adapter = new GridViewArrayAdapter(this,R.layout.gridview_item, _landmarks);
         _gridview.setAdapter(_adapter);
         _gridview.setOnItemClickListener(_itemOnclick);
+        loadDatafromMaps();
+    }
+
+    public void btn_route_click(View view) {
+        Intent intent = new Intent(MainActivity.this, RouteActivity.class);
+        intent.putExtra("routes",_routes);
+        startActivity(intent);
     }
 }

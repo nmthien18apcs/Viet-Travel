@@ -15,7 +15,6 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.CopyOnWriteArrayList;
 
 public class GridViewArrayAdapter extends ArrayAdapter<Landmark> {
     private Context _context;
@@ -46,6 +45,7 @@ public class GridViewArrayAdapter extends ArrayAdapter<Landmark> {
         TextView textView = convertView.findViewById(R.id.textview_title);
         Landmark lndmk= _landmarks.get(position);
         Bitmap bmp = BitmapFactory.decodeResource(_context.getResources(), lndmk.getLogoID());
+        bmp = Bitmap.createScaledBitmap(bmp, bmp.getWidth()/4, bmp.getHeight()/4, false);
         imageView.setImageBitmap(bmp);
         textView.setText(lndmk.getName());
         return convertView;
