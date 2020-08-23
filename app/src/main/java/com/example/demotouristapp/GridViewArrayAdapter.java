@@ -45,7 +45,7 @@ public class GridViewArrayAdapter extends ArrayAdapter<Landmark> {
         TextView textView = convertView.findViewById(R.id.textview_title);
         Landmark lndmk= _landmarks.get(position);
         Bitmap bmp = BitmapFactory.decodeResource(_context.getResources(), lndmk.getLogoID());
-        bmp = Bitmap.createScaledBitmap(bmp, bmp.getWidth()/4, bmp.getHeight()/4, false);
+        bmp = Bitmap.createScaledBitmap(bmp, bmp.getWidth()/12, bmp.getHeight()/12, false);
         imageView.setImageBitmap(bmp);
         textView.setText(lndmk.getName());
         return convertView;

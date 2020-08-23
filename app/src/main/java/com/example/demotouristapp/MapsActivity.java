@@ -51,6 +51,7 @@ import java.util.Scanner;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private String mcity = new String();
     private Landmark mLandmark;
     private Marker mMarker;
     private TextToSpeech mText2Speech;
@@ -74,11 +75,10 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
         loadData();
-        initcomponent();
-        //a
+        initcomponent1();
     }
 
-    private void initcomponent() {
+    private void initcomponent1() {
             mText2Speech = new TextToSpeech(this, new TextToSpeech.OnInitListener() {
                 @Override
                 public void onInit(int status) {
@@ -89,6 +89,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void loadData() {
         Intent intent = getIntent();
+        mcity = intent.getStringExtra("city");
         mLandmark = new Landmark(intent.getStringExtra("name"), intent.getStringExtra("description"),
                 intent.getIntExtra("logoid", 0),
                 new LatLng(intent.getDoubleExtra("lat", 0), intent.getDoubleExtra("lng", 0)));
@@ -129,7 +130,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
     private void displayMarker() {
         Bitmap bmp = BitmapFactory.decodeResource(getResources(), mLandmark.getLogoID());
-        bmp = Bitmap.createScaledBitmap(bmp, bmp.getWidth()/4, bmp.getHeight()/4, false);
+        bmp = Bitmap.createScaledBitmap(bmp, bmp.getWidth()/12, bmp.getHeight()/12, false);
         BitmapDescriptor bitmapDescriptor = BitmapDescriptorFactory.fromBitmap(bmp);
         mMarker = mMap.addMarker(new MarkerOptions().position(mLandmark.getLatlng()).title(mLandmark.getName()).snippet(mLandmark.getDescription()).icon(bitmapDescriptor));
         mMap.animateCamera(CameraUpdateFactory.zoomTo(15),2000,null);
@@ -180,22 +181,22 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     }
 
 
-    public void btn_add_onclick(View view) {
-          /*if (mpolyline!=null)
-              mpolyline.remove();*/
+    public void btn_add_onclick (View view) {
         Context context = getApplicationContext();
         CharSequence text = "This place has been added to the route!";
         int duration = Toast.LENGTH_SHORT;
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
-        Intent intent = new Intent(MapsActivity.this, MainActivity.class);
+        Intent intent = new Intent();
         intent.putExtra("name",mLandmark.getName());
         intent.putExtra("description",mLandmark.getDescription());
         intent.putExtra("logoid",mLandmark.getLogoID());
         intent.putExtra("lat",mLandmark.getLatlng().latitude);
         intent.putExtra("lng",mLandmark.getLatlng().longitude);
-        startActivity(intent);
-
+        intent.putExtra("cityname",mcity);
+        setResult(RESULT_OK,intent);
+        Log.d("test1","123");
+        finish();
     }
 
     private class MyDirection extends AsyncTask<Void, Void, ArrayList>{

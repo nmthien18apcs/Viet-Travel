@@ -31,12 +31,28 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"></activity>
+        <activity
+            android:name=".FeatureActivity">
+        </activity>
+        <activity
+            android:name=".ScheduleActivity">
+        </activity>
+        <activity
+            android:name=".FoodActivity">
+        </activity>
+        <activity
+            android:name=".NeededAppActivity">
+        </activity>
+        <activity
+            android:name=".TouristAttractionActivity">
+        </activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
