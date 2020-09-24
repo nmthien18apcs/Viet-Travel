@@ -12,11 +12,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
 import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 
+import java.io.BufferedReader;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 public class FeatureActivity extends AppCompatActivity {
@@ -27,6 +32,28 @@ public class FeatureActivity extends AppCompatActivity {
     private CardView NeededApp_;
     private String _place = new String();
     private ArrayList<Landmark> ListLandmark = new ArrayList<>();
+    public String readFile(String filename) {
+
+        try {
+            FileInputStream fileInputStream = openFileInput(filename);
+            InputStreamReader inputStreamReader = new InputStreamReader(fileInputStream);
+
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+            StringBuffer stringBuffer = new StringBuffer();
+
+            String lines;
+            while ((lines = bufferedReader.readLine()) != null) {
+                stringBuffer.append(lines + "\n");
+            }
+            return stringBuffer.toString();
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
     private CardView.OnClickListener TouristItemOnClick = new CardView.OnClickListener(){
         @Override
         public void onClick(View v) {
@@ -40,11 +67,15 @@ public class FeatureActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View v) {
+            String routelist =readFile("routes.txt");
+            Log.d("testroute", routelist);
+            Gson gson = new Gson();
+            Type type = new TypeToken<ArrayList<Landmark>>(){}.getType();
+            ArrayList<Landmark> carsList = gson.fromJson(routelist, type);
+            ShortestPath shortestPath = new ShortestPath(carsList);
+            ListLandmark = carsList;
             if(ListLandmark.size() != 0) {
                 Intent intent = new Intent(FeatureActivity.this, ScheduleActivity.class);
-                Gson gson = new Gson();
-                String jsonRoute = gson.toJson(ListLandmark);
-                intent.putExtra("routes", jsonRoute);
                 startActivity(intent);
             }
             else

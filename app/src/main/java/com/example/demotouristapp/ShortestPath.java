@@ -32,12 +32,6 @@ public class ShortestPath {
     private ArrayList<Landmark> bestRoute;
 
     public ShortestPath(ArrayList<Landmark> tmp) {
-//        String routelist =readFile("routes.txt");
-//        Log.d("testroute", routelist);
-//        Gson gson = new Gson();
-//        Type type = new TypeToken<ArrayList<Landmark>>(){}.getType();
-//        this.carsList = gson.fromJson(routelist, type);
-//        Log.d("testroute1", carsList.get(0).getDescription());
         this.carsList = tmp;
         bestDist = 1e18;
     }
@@ -62,15 +56,18 @@ public class ShortestPath {
     }
 
     public void generateShortestPath(int lhs, int rhs) {
-        Double cur = 0.0;
-        for (int i = 1; i < carsList.size(); ++i) {
-            cur += distance(carsList.get(i - 1).getLatlng(), carsList.get(i).getLatlng());
+        if (lhs == rhs)
+        {
+            Double cur = 0.0;
+            for (int i = 1; i < carsList.size(); ++i) {
+                cur += distance(carsList.get(i - 1).getLatlng(), carsList.get(i).getLatlng());
+            }
+            if (cur < bestDist) {
+                cur = bestDist;
+                bestRoute = carsList;
+            }
+            return;
         }
-        if (cur < bestDist) {
-            cur = bestDist;
-            bestRoute = carsList;
-        }
-        if (lhs == rhs) return;
         for (int i = lhs; i <= rhs; ++i) {
             Collections.swap(carsList, lhs, i);
             generateShortestPath(lhs + 1, rhs);

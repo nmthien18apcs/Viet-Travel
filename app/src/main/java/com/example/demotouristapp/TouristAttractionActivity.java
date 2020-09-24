@@ -110,6 +110,7 @@ public class TouristAttractionActivity extends AppCompatActivity {
         _gridview.setAdapter(_adapter);
         _gridview.setOnItemClickListener(_itemOnclick);
     }
+
    public void btn_back_onclick(View view) {
         Log.d("aaa",String.valueOf(_routes.size()));
         Gson gson = new Gson();

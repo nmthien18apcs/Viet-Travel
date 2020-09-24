@@ -121,7 +121,6 @@ public class ScheduleActivity extends FragmentActivity implements OnMapReadyCall
         Type type = new TypeToken<ArrayList<Landmark>>(){}.getType();
         ArrayList<Landmark> carsList = gson.fromJson(routelist, type);
         ShortestPath shortestPath = new ShortestPath(carsList);
-        Log.d("testroute1", carsList.get(0).getDescription());
         ListLandmark = shortestPath.findShortestPath();
     }
 
