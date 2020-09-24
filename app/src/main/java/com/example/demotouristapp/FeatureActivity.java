@@ -13,6 +13,10 @@ import androidx.cardview.widget.CardView;
 
 import com.google.gson.Gson;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 
 public class FeatureActivity extends AppCompatActivity {
@@ -36,11 +40,21 @@ public class FeatureActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View v) {
-            Intent intent = new Intent(FeatureActivity.this, ScheduleActivity.class);
-            Gson gson = new Gson();
-            String jsonRoute = gson.toJson(ListLandmark);
-            intent.putExtra("routes",jsonRoute);
-            startActivity(intent);
+            if(ListLandmark.size() != 0) {
+                Intent intent = new Intent(FeatureActivity.this, ScheduleActivity.class);
+                Gson gson = new Gson();
+                String jsonRoute = gson.toJson(ListLandmark);
+                intent.putExtra("routes", jsonRoute);
+                startActivity(intent);
+            }
+            else
+            {
+                Context context = getApplicationContext();
+                CharSequence text = "Routes is Null!";
+                int duration = Toast.LENGTH_SHORT;
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
         }
     };
 
@@ -94,5 +108,9 @@ public class FeatureActivity extends AppCompatActivity {
         Intent intent = getIntent();
         _place = intent.getStringExtra("city");
         Log.d("testplace","place "+_place);
+    }
+    public void btn_home_onclick(View view) throws FileNotFoundException {
+        Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
     }
 }
