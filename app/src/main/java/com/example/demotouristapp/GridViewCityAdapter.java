@@ -45,7 +45,6 @@ public class GridViewCityAdapter extends ArrayAdapter<City>  {
         else if(getCity.get_name()=="HaNoi")
             tmp = "Ha Noi";
         textView.setText(tmp);
-
         return convertView;
     }
 }
