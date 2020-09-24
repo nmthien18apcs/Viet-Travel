@@ -93,13 +93,9 @@ public class FeatureActivity extends AppCompatActivity {
 
         @Override
         public void onClick(View v) {
-           /* Intent intent = new Intent(FeatureActivity.this, FoodActivity.class);
-            startActivity(intent);*/
-            Context context = getApplicationContext();
-            CharSequence text = "Comming soon!";
-            int duration = Toast.LENGTH_SHORT;
-            Toast toast = Toast.makeText(context, text, duration);
-            toast.show();
+            Intent intent = new Intent(FeatureActivity.this, FoodActivity.class);
+            intent.putExtra("cityname",_place);
+            startActivity(intent);
         }
     };
 
