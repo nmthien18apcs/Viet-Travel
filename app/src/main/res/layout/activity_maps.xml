@@ -27,6 +27,24 @@ android:orientation="vertical">
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
+            android:id="@+id/btn_add"
+            android:layout_gravity="center_horizontal"
+            android:background="#3399ff"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:text="Add"
+            android:onClick="btn_add_onclick"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
             android:layout_gravity="center_horizontal"
             android:text="Direction"
             android:layout_margin="10dp"
@@ -36,24 +54,24 @@ android:orientation="vertical">
             android:id="@+id/btn_direct"
             android:onClick="btn_direct_onclick"/>
     </LinearLayout>
-   <LinearLayout
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_weight="1"
-       android:orientation="vertical">
-       <Button
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_weight="0"
-           android:id="@+id/btn_add"
-           android:layout_gravity="center_horizontal"
-           android:background="#3399ff"
-           android:textColor="#FFFFFF"
-           android:layout_margin="10dp"
-           android:textStyle="bold"
-           android:text="Add"
-           android:onClick="btn_add_onclick"/>
-   </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:id="@+id/btn_back_map"
+            android:layout_gravity="center_horizontal"
+            android:background="#3399ff"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:text="Back"
+            android:onClick="btn_back_onclick"/>
+    </LinearLayout>
 
 </LinearLayout>
 </LinearLayout>

@@ -37,11 +37,14 @@ import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.gson.Gson;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -197,6 +200,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         setResult(RESULT_OK,intent);
         Log.d("test1","123");
         finish();
+    }
+
+    public void btn_back_onclick(View view) {
+        Intent intent = new Intent(this, TouristAttractionActivity.class);
+        intent.putExtra("cityname", mcity);
+        startActivity(intent);
     }
 
     private class MyDirection extends AsyncTask<Void, Void, ArrayList>{

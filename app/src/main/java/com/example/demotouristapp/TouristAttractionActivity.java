@@ -115,6 +115,7 @@ public class TouristAttractionActivity extends AppCompatActivity {
         String jsonCars = gson.toJson(_routes);
         Intent intent = new Intent(TouristAttractionActivity.this, FeatureActivity.class);
         intent.putExtra("routes", jsonCars);
+        intent.putExtra("city", _cityname);
         Log.d("testroute", jsonCars);
         startActivity(intent);
        String textToSave = jsonCars;
