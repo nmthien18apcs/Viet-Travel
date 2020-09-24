@@ -1,0 +1,247 @@
+{
+    "Hue": {
+    "Restaurant": [
+    {
+    "name": "Nhà hàng Tịnh Gia Viên",
+    "location": [
+    16.4726513,
+    107.5822298
+    ],
+    "imageUrl": "hue_nha_hang_01",
+    "description":"Được biết đến là một trong những nhà hàng phục vụ các món ăn chế biến cho Hoàng tộc khi xưa, Tịnh Gia Viên là nhà hàng có các món ăn được nấu bởi nghệ nhân gia truyền là con cháu của Hoàng tộc, nên những món ăn ở đây rất ngon và có chút hương vị của Hoàng Tộc"
+    },
+    {
+    "name": "Nhà hàng Geylang",
+    "location": [
+    16.4783579, 107.5753742
+    ],
+    "imageUrl": "hue_nha_hang_02",
+    "description": "GeyLang Huế là một nhà hàng khá mới mẻ cho những du khách lần đầu đến với Huế. Hiện nay, GeyLang Huế đã mở rộng thực đơn gần 100 món, được chế biến rất công phu và hấp dẫn và ngon miệng để phục vụ du khách đến Huế du lịch."
+    },
+    {
+    "name": "Nhà hàng Huế Cổ",
+    "location": [
+    16.4626435, 107.5604388
+    ],
+    "imageUrl": "hue_nha_hang_03",
+    "description": " Đến với Huế Cổ, du khách sẽ có cơ hội chiêm nghiệm những nét văn hóa đặc trưng riêng của một nhà hàng vườn cổ. Đặc biệt các món ăn tại Huế Cổ mang phong cách và hương vị Huế sang trọng và độc đáo."
+    },
+    {
+    "name": "Quán ăn Ngự Uyển",
+    "location": [
+    16.457081, 107.5833973
+    ],
+    "imageUrl": "hue_nha_hang_04",
+    "description": "Nhà hàng này chuyên phục vụ nhiều món như: bánh bèo, bánh ướt , bánh ướt thịt heo, phở bỏ, gà, bún bò huế."
+    },
+    {
+    "name": "Nhà hàng Ngọc Anh",
+    "location": [
+    16.480844, 107.5935903
+    ],
+    "imageUrl": "hue_nha_hang_05",
+    "description": "Đến với nhà hàng Ngọc Anh, du khách sẽ được thưởng thức những món ăn từ hải sản tươi sống, cơm nêu… Ngoài tổ chức các món ăn cho du khách, nhà hàng còn tổ chức tiệc như: sinh nhật, thôi nôi…"
+    },
+    {
+    "name": "Nhà Hàng Khải Hoàn",
+    "location": [
+    16.4709621, 107.5926435
+    ],
+    "imageUrl": "hue_nha_hang_06",
+    "description": "Nhà hàng chuyên cung cấp những Món Huế phù hợp cho Gia đình, Giới văn phòng và Khách du lịch. Nếu có nhu cầu nhà hàng sẽ giao hàng tận nơi."
+    },
+    {
+    "name": "Nhà Hàng Hải Sản Duyên Anh",
+    "location": [
+    16.4936925, 107.6210296
+    ],
+    "imageUrl": "hue_nha_hang_07",
+    "description": "Nhà hàng chuyên phục vụ các Món Huế  cho Gia đình, Nhóm hội, Giới văn phòng, Khách du lịch.. Một số hải sản của nhà hàng bao gồm: Tôm, cua , cá, mực , hầu , trìa , tôm hùm..."
+    },
+    {
+    "name": "Nhà Hàng Chay Tịnh Lâm Nhi",
+    "location": [
+    16.4594628, 107.6003705
+    ],
+    "imageUrl": "hue_nha_hang_08",
+    "description": "Nhà hàng chuyên các Món Việt , phù hợp cho Gia đình, Nhóm hội, dân văn phòng, công sở những người thích ăn chay..."
+    },
+    {
+    "name": "Nhà hàng Thăng Long",
+    "location": [
+    16.4768858, 107.6003705
+    ],
+    "imageUrl": "hue_nha_hang_09",
+    "description": "Một trong những nhà hàng nổi tiếng ở Huế, Với thế mạnh phục vụ các đoàn khách du lịch  Thái Lan, Trung Quốc, Hàn Quốc,  Nhật Bản,  Việt Nam…, với sức chứa hơn 500 khách/ 1 lượt và dịch vụ Buffet trưa hằng ngày duy nhất tại Huế."
+    },
+    {
+    "name": "Nhà Hàng 2T",
+    "location": [
+    16.4611533, 107.6020932
+    ],
+    "imageUrl": "hue_nha_hang_10",
+    "description": "Nhà hàng  chuyên các Món Miền Trung , phù hợp cho Gia đình, nhóm hội lớp , công ty , đoàn thể…"
+    }
+    ]
+    },
+    "HaNoi": {
+    "Restaurant": [
+    {
+    "name": "Nhà Hàng Soft Water",
+    "location": [
+    21.0511493,
+    105.8453472
+    ],
+    "imageUrl": "hanoi_nha_hang_01",
+    "description": "Nhà hàng Soft Water là nhà hàng sinh thái có không gian đẹp bậc nhất tại Hà Nội. Không gian đậm chất thiên nhiên tại đây quả thực thật hiếm có."
+    },
+    {
+    "name": "Nhà Hàng Sen Tây Hồ",
+    "location": [
+    21.0742913, 105.8153038
+    ],
+    "imageUrl": "hanoi_nha_hang_02",
+    "description": "ẩm thực tinh tế trong từng món ăn tại nhà hàng Sen Tây Hồ làm hài lòng bất cứ thực khách nào nhờ sự chăm chút, tỉ mỉ. Từ khâu lựa chọn nguyên liệu, chế biến cho đến bày biện, trang trí."
+    },
+    {
+    "name": "The Rooftop Bar Hà Nội",
+    "location": [
+    21.0249117, 105.8411806
+    ],
+    "imageUrl": "hanoi_nha_hang_03",
+    "description": " Một không gian trên cao sang chảnh để ngắm nhìn thành phố về đêm. Không gian thiết kế của The Rooftop Bar hanoi mang vẻ đẹp tuyệt mỹ. Nhờ những đường nét sang trọng và tinh tế."
+    },
+    {
+    "name": "Nhà Hàng Long Đình",
+    "location": [
+    21.0255815, 105.8429413
+    ],
+    "imageUrl": "hanoi_nha_hang_04",
+    "description": "Ở đây có nhiều món điểm tâm ngon như bánh bao trứng sữa, há cảo,… Ngoài ra quán còn có các món như cua tươi, thịt ba chỉ hun khói, vịt quay Hong Kong,…"
+    },
+    {
+    "name": "La Verticale",
+    "location": [
+    21.0208795, 105.8487023
+    ],
+    "imageUrl": "hanoi_nha_hang_05",
+    "description": "Du khách sẽ có cơ hội thưởng thức từ món Âu món Á. Cho đến các món Trung Hoa ngay trong nhà hàng này. Không gian ấm cúng kết hợp với tiếng nhạc du dương. Du khách sẽ cảm thấy ngon miệng khi thưởng thức đồ ăn tại nhà hàng La Verticale."
+    },
+    {
+    "name": "Green Tangerine",
+    "location": [
+    21.0326729, 105.8537381
+    ],
+    "imageUrl": "hanoi_nha_hang_06",
+    "description": "Các món ăn ở Green Tangerina có sự kết hợp đầy sáng tạo giữa tinh hoa ẩm thực Pháp. Và nét duyên văn hóa đặc sắc nổi tiếng trên thế giới nên rất hấp dẫn."
+    },
+    {
+    "name": "El Gaucho ",
+    "location": [
+    21.0244253, 105.8563604
+    ],
+    "imageUrl": "hanoi_nha_hang_07",
+    "description": "El Gaucho có không gian rộng rãi, thoải mái. Thích hợp cho những bữa tiệc gia đình, bạn bè. Nhân viên trong quán rất dễ thương và phục vụ nhiệt tình."
+    },
+    {
+    "name": "Ming Restaurant",
+    "location": [
+    21.0499506, 105.8398363
+    ],
+    "imageUrl": "hanoi_nha_hang_08",
+    "description": "Ming Restaurant là nhà hàng sang trọng chuyên phục vụ các món ăn Trung Quốc. Đến với Ming Restaurant thực khách sẽ được thưởng thức các món ăn hấp dẫn như há cảo, xíu mại, vịt quay Bắc Kinh,"
+    },
+    {
+    "name": "Jacksons Steakhouse",
+    "location": [
+    21.0239432, 105.8531903
+    ],
+    "imageUrl": "hanoi_nha_hang_09",
+    "description": "Jacksons Steakhouse tọa lạc ngay trên phố Hai Bà Trưng. Nhà hàng chuyên phục vụ các món ăn và đồ uống thượng hạng với 3 khu riêng biệt. Tầng trệt nhà hàng có quầy bar sôi động."
+    },
+    {
+    "name": "La Badiane",
+    "location": [
+    21.026596, 105.8431384
+    ],
+    "imageUrl": "hanoi_nha_hang_10",
+    "description": "Mang nghĩa tiếng Pháp là hoa hồi, loại gia vị đặc biệt trong ẩm thực. La Badiane được thiết kế theo phong cách Châu Âu" 
+    }
+    ]
+    },
+    "SaiGon": {
+    "Restaurant": [
+    {
+    "name": "Bánh xèo",
+    "location": [
+     10.7896233,106.6890742
+    ],
+    "imageUrl": "saigon_nha_hang_01",
+    "description": "Nếu bạn muốn thưởng thức được món bánh xèo đúng hương vị thì quán bánh xèo này là một trong những các quán ăn ngon Sài Gòn ngon nức tiếng từ lâu. Bánh xèo theo kiểu miền Nam có vỏ rất giòn, bên trong phần nhân khá nhiều tôm thịt, tôm mềm nên khi cuốn rất tiện lợi."
+    },
+    {
+    "name": "Phở Lệ",
+    "location": [10.7552405,106.6713724
+    ],
+    "imageUrl": "saigon_nha_hang_02",
+    "description": "Có từ năm 1970 quán phở Lệ là một quán ăn ngon Sài Gòn mà du khách nên tới thưởng thức. Nước lèo của quán có vị ngọt từ xương cùng bò viên vừa vặn giúp cho món ăn này thu hút được nhiều du khách. Bạn sẽ cảm nhận được từng miếng bò viên cỡ lớn được cắt nhỏ vừa ăn, hơi giòn và có mỡ nên mềm mại chứ không khô. Tô phở được trang trí rất đẹp nhờ vài lát hành tây, hành lá tươi, nhìn giống phở Hà Nội một thời."
+    },
+    {
+    "name": "Dimsum Tiến Phát",
+    "location": [10.7545092,106.6600843
+    ],
+    "imageUrl": "saigon_nha_hang_03",
+    "description": "Tiến Phát là thương hiệu dimsum danh tiếng của người Hoa khu Chợ Lớn. Không gian tuy không gọi là quá sang trọng như những nhà hàng dimsum khác nhưng lại tạo cho thực khách cảm giác quen thuộc, cứ như mỗi lần xem phim Hồng Kông vậy."
+    },
+    {
+    "name": "Bánh đúc Phan Đăng Lưu",
+    "location": [10.802065,106.692903
+    ],
+    "imageUrl": "saigon_nha_hang_04",
+    "description": "Nổi tiếng về độ lâu đời và hương vị món ăn này ở Sài Gòn thì phải kể đến hàng bánh đúc Phan Đăng Lưu. Bánh ở đây hấp dẫn ở độ dẻo dai của bột, thịt nấm đủ đầy và nêm nếm vừa miệng. Hòa quyện thêm chút bùi bùi, thơm thơm cho bánh còn có đậu xanh nấu nhuyễn. Đảm bảo bạn sẽ “ghiền” món ăn này đó."
+    },
+    {
+    "name": "Lẩu cá Dân Ích",
+    "location": [10.7531192,106.6563269
+    ],
+    "imageUrl": "saigon_nha_hang_05",
+    "description": "Nằm ở 1 góc đường Châu Văn Liêm, quán lẩu cá Dân Ích đã tồn tại và phát triển đến nay cũng đã hơn 40 năm tại Sài Gòn. Nơi đây lấy lòng được thực khách nhờ những món ăn đậm vị Trung Hoa như lẩu cá cù lao. Nước lẩu ở đây ngọt thanh từ xương hầm chứ không phải từ bọt ngọt đâu nhé. Nồi lẩu gồm có cá, tôm, chả cá, da heo, nấm… Rau và bún gạo, mì ăn kèm, đặc biệt ở đây có thêm bánh quẩy ăn với lẩu, khá lạ miệng nhưng siêu ngon."
+    },
+    {
+    "name": "Bún măng vịt",
+    "location": [10.7932964,106.6648824
+    ],
+    "imageUrl": "saigon_nha_hang_06",
+    "description": "Giữa Sài Gòn bao la quán xá thế này để tìm được một quán bún măng gỏi vịt ngon là cả một vấn đề. Quán nằm sâu trong con hẻm đường Lê Văn Sỹ, quận Tân Bình. Vậy mà quán bún vịt này bán gần 50 năm nổi tiếng chỉ bán trong vòng 1 tiếng là hết sạch. Đĩa gỏi đấy ắp toàn thịt là thịt, vịt ít mỡ da mỏng, chắc thịt và mềm. Tô bún măng rất thơm và đậm đà, măng ngon sần sật thêm chén nước chấm chỉ cần pha chút sa tế thì quá là tuyệt vời rồi. Note liền quán ăn ngon Sài Gòn này nhé."
+    },
+    {
+    "name": "Bánh canh Nguyễn Phi  Khanh",
+    "location": [10.791867,106.6931
+    ],
+    "imageUrl": "saigon_nha_hang_07",
+    "description": "Nhắc tới quán ăn ngon Sài Gòn thì sẽ không thể bỏ qua món bánh canh ở Nguyễn Phi Khanh. Sẽ chỉ mất khoảng 1 tiếng là bác Huối – Chủ quán có thể bán tới cả trăm tô bánh canh. Những cọng bánh canh ngậm đủ nước có đủ độ dai mềm, đậm đà với màu cam đặc trưng. Đặc biệt, miếng móng giò chấm với mắm tiêu ớt, cắn ngập răng còn thấy rõ vị béo ngậy, giòn dai vừa đủ, khiến tô bánh canh có giá trị lên gấp bội. Những ai thưởng thức món ăn này đều phải say đắm thế nên tới Sài Gòn nhất định bạn phải thử một lần nhé."
+    },
+    {
+    "name": "Súp cua trứng bắc thảo",
+    "location": [10.7466001,106.7064871
+    ],
+    "imageUrl": "saigon_nha_hang_08",
+    "description": "Ở Tân Định nổi tiếng với món súp cua nên đây là một quán ăn ngon Sài Gòn mà bạn nên note lại ngay khi tới đây. Quán bán cả ngày từ sáng đến chiều, súp đặc quánh gồm nhiều xương, thịt, gà xé, thịt cua… nên ai ăn cũng thấy “đã miệng”. Bởi vậy quán luôn thu hút nhiều du khách tới thưởng thức món ăn."
+    },
+    {
+    "name": "Quán ốc Loan",
+    "location": [10.7465981,106.6735651
+    ],
+    "imageUrl": "saigon_nha_hang_09",
+    "description": "Nằm bên dưới chung cư Nguyễn Thiện Thuật sầm uất, ốc Loan từ lâu đã là địa điểm yêu thích của các tín đồ ốc. Đầu tiên phải kể đến không gian ăn ốc vô cùng thoáng đãng – bàn ghế kê sát ngoài trời, không bị bí bách trong không gian quán. Thứ hai chính là ốc ở đây rất đa dạng, được chế biến thành nhiều món với hương vị thơm ngon khác nhau."
+    },
+    {
+    "name": "Chè",
+    "location": [10.7675596,106.6774671
+    ],
+    "imageUrl": "saigon_nha_hang_10",
+    "description": "Chè Hiển Khánh được biết đến là một trong số các quán chè ngon ở Sài Gòn được nhiều người yêu thích. Quán mở cửa từ năm 1959 và là quán chè gắn liền với tuổi thơ của nhiều người Sài Gòn. Chè tại quán chủ yếu được chế biến theo món chè miền Bắc theo khẩu vị của người Sài Gòn. Mặc dù khi mới mở quán chỉ có 3 món chính là thạch trắng cắt sợi, chè kho ướp lạnh và chè đậu xanh. Thực đơn của quán còn có nhiều loại thạch hấp dẫn như: Thạch trắng, thạch sen nhãn, thạch thốt nốt, thạch dừa… Điểm đặc biệt khiến người ăn nhớ mãi các món thạch chè ở đây chính là hương hoa nhài thoảng nhẹ. Ngoài ra quán còn có nhiều món bánh Việt quen thuộc như: Bánh cốm, bánh in, bánh đậu xanh…"
+    }
+    ]
+    }
+    }

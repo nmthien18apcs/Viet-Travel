@@ -23,7 +23,7 @@ android:orientation="vertical">
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical">
-        <Button
+        <!--<Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
@@ -34,6 +34,16 @@ android:orientation="vertical">
             android:layout_margin="10dp"
             android:textStyle="bold"
             android:text="Add"
+            android:onClick="btn_add_onclick"/>-->
+        <ImageButton
+            android:layout_width="220px"
+            android:layout_height="170px"
+            android:layout_weight="0"
+            android:paddingTop="2dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/addbtn"
             android:onClick="btn_add_onclick"/>
     </LinearLayout>
     <LinearLayout
@@ -41,7 +51,7 @@ android:orientation="vertical">
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical">
-        <Button
+       <!-- <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
@@ -52,6 +62,16 @@ android:orientation="vertical">
             android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:id="@+id/btn_direct"
+            android:onClick="btn_direct_onclick"/>-->
+        <ImageButton
+            android:layout_width="220px"
+            android:layout_height="170px"
+            android:layout_weight="0"
+            android:paddingTop="2dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/compass"
             android:onClick="btn_direct_onclick"/>
     </LinearLayout>
     <LinearLayout
@@ -59,7 +79,7 @@ android:orientation="vertical">
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:orientation="vertical">
-        <Button
+        <!--<Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0"
@@ -70,6 +90,16 @@ android:orientation="vertical">
             android:layout_margin="10dp"
             android:textStyle="bold"
             android:text="Back"
+            android:onClick="btn_back_onclick"/>-->
+        <ImageButton
+            android:layout_width="220px"
+            android:layout_height="160px"
+            android:layout_weight="0"
+            android:paddingTop="6dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:src="@drawable/back"
             android:onClick="btn_back_onclick"/>
     </LinearLayout>
 
