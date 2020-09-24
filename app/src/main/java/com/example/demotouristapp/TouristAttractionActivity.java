@@ -22,6 +22,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.SortedMap;
 
 public class TouristAttractionActivity extends AppCompatActivity {
     private GridView _gridview;
@@ -123,11 +124,13 @@ public class TouristAttractionActivity extends AppCompatActivity {
            FileOutputStream fileOutputStream = openFileOutput("routes.txt", MODE_PRIVATE);
            fileOutputStream.write(textToSave.getBytes());
            fileOutputStream.close();
-
+           Log.e("save:", "Done");
        } catch (FileNotFoundException e) {
+           Log.e("Save: ", "cant find routes.txt");
            e.printStackTrace();
        } catch (IOException e) {
            e.printStackTrace();
+           Log.e("Save: ", "cant save routes.txt");
        }
     }
 }
